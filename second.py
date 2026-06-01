@@ -55,7 +55,7 @@ class CNN(nn.Module):
 # ============================================================
 # 3. TRAIN  (only the model name changed: CNN() instead of Net())
 # ============================================================
-device = 'mps'
+device = 'mps' if torch.backends.mps.is_available() else 'cpu'
 model = CNN().to(device)
 
 criterion = nn.CrossEntropyLoss()
