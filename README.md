@@ -46,6 +46,7 @@ Install with:
 ```bash
 pip install torch torchvision
 ```
+NOTE: The model uses GPU acceleration through Metal Performance Shaders(Apple Silicon Chips), otherwise it can also be trained only through the CPU as well.
 
 ## Usage
 
